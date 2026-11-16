@@ -1,12 +1,45 @@
 <!DOCTYPE html>
+<!--
+  DEV.140 · Homework 4 · Amber's site BEFORE the accessibility fixes.
+  This page has 5 accessibility problems (the same ones from the class demo):
+  1. The photo has no alt text.
+  2. The tagline is light gray on white (low contrast).
+  3. "About Me" is an h4 right after the h1 (skipped heading levels).
+  4. The link just says "Click here".
+  5. The email box has no label, only a placeholder.
+  Upload THIS version first, run WAVE on it, then replace it with site-after.
+-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amber Butler | About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hi, I'm Amber</h1>
-    <p>This is my very first website!</p>
+  <header>
+    <h1>Amber Butler</h1>
+    <p class="tagline">Web development student. I build clean, simple websites.</p>
+  </header>
+  <main>
+    <section>
+      <h4>About Me</h4>
+      <img class="photo" src="images/me.png">
+      <p>I'm learning to build websites for small local businesses.</p>
+      <p>Want to see my experience? <a href="resume.html">Click here</a></p>
+    </section>
+    <section>
+      <h2>Stay in Touch</h2>
+      <p>Get an email when I post a new project.</p>
+      <input type="email" name="email" placeholder="Email address">
+      <button type="button">Subscribe</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Amber Butler</p>
+  </footer>
 </body>
 </html>
